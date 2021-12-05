@@ -1,3 +1,9 @@
+## Airbyte run command with env variable as destination raw table
+
+```
+ run  --vars '{"raw_table":"_airbyte_raw_demo_api_nested"}'
+```
+
 ## Installing dbt
 
 1. Activate your venv and run `pip3 install dbt`
