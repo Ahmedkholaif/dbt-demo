@@ -1,0 +1,17 @@
+config:
+  partial_parse: true
+  printer_width: 120
+  send_anonymous_usage_stats: false
+  use_colors: true
+normalize:
+  outputs:
+    prod:
+      dbname: airbyte
+      host: 127.0.0.1
+      pass: airbyte_pass
+      port: 5432
+      schema: public
+      threads: 32
+      type: postgres
+      user: airbyte
+  target: prod
