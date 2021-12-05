@@ -21,6 +21,6 @@ select
     {{ current_timestamp() }} as _airbyte_normalized_at,
     _airbyte_api_nested_hashid
 from {{ ref('api_nested_ab3') }}
--- api_nested from {{ source('public', '_airbyte_raw_api_nested') }}
+-- api_nested from {{ source('public', var('raw_table')) }}
 where 1 = 1
 

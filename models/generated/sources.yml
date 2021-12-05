@@ -6,4 +6,5 @@ sources:
     schema: false
     identifier: false
   tables:
-  - name: _airbyte_raw_api_nested
+  - name: "{{ var('raw_table') }}"
+  # - name: _airbyte_raw_demo_api_nested
