@@ -1,7 +1,7 @@
-## Airbyte run command with env variable as destination raw table
+## Airbyte custom transformation - run command with env variables
 
 ```
- run  --vars '{"raw_table":"_airbyte_raw_demo_api_nested"}'
+ run  --vars '{"raw_table":"_airbyte_raw_demo_api_nested","db_name":"airbyte","db_host":"127.0.0.1","db_pass":"airbyte_pass"}'
 ```
 
 ## Installing dbt

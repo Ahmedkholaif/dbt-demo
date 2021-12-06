@@ -6,9 +6,9 @@ config:
 normalize:
   outputs:
     prod:
-      dbname: airbyte
-      host: 127.0.0.1
-      pass: airbyte_pass
+      dbname: "{{ var('db_name') }}"
+      host: "{{ var('db_host') }}"
+      pass: "{{ var('db_pass') }}"
       port: 5432
       schema: public
       threads: 32
